@@ -1,17 +1,19 @@
-class DA:
-    def __init__(self, sno, regions, datafile):
-        self.sno = sno
-        self.regions = regions
-        self.datafile = data.xlsx
-
-    dict = {"region": ["asia"],
-            "period"["1978", "1979", "1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987"]}
-
-    # reading excel data
-    def read_data():
-        pd.read_excel()
-        print(datafile)
+#!/usr/bin/env python3
 
 
+''' imports '''
+import pandas as pd
+import matplotlib as plt
+import numpy as np
 
+class ASP:
 
+    def read_csvdata():
+
+        file_data = 'Worksheet in D  Lesson 2019 Applied Sriptong Using Python Python Elective (IT49450) - Project_14Mar19.csv'
+
+        df = pd.read_csv(file_data, delimiter='\t', names = ['Brunei Darussalam', 'Indonesia', 'Malaysia'])
+        df = df.isnull()
+        print(df.head(3))
+
+    read_csvdata()
